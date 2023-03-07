@@ -51,7 +51,9 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\avital.jpg" />
 	  <None Remove="Resources\Images\aviv.jpg" />
+	  <None Remove="Resources\Images\deletebutton.svg" />
 	  <None Remove="Resources\Images\dessertstorm.gif" />
+	  <None Remove="Resources\Images\dessertstorm1.jpeg" />
 	  <None Remove="Resources\Images\gil.jpg" />
 	  <None Remove="Resources\Images\itamar.jpg" />
 	  <None Remove="Resources\Images\jofir.jpg" />
