@@ -18,49 +18,7 @@
             Text="טען תלמידים"
             WidthRequest="120" />
         <Grid
-            Padding="10"
-            x:DataType="Models:Student"
-            ColumnDefinitions="auto,auto"
-            ColumnSpacing="5"
-            HorizontalOptions="Center"
-            RowDefinitions="*,*,*"
-            RowSpacing="5">
-            <Border
-                Grid.RowSpan="3"
-                Grid.Column="0"
-                HeightRequest="80"
-                StrokeShape="RoundRectangle 40"
-                StrokeThickness="5"
-                WidthRequest="80">
-
-
-                <Image
-                    Aspect="AspectFill"
-                    HeightRequest="80"
-                    HorizontalOptions="Center"
-                    Source="{Binding Image}"
-                    WidthRequest="80" />
-            </Border>
-            <Label
-                Grid.Column="1"
-                FontSize="20"
-                HorizontalOptions="Center"
-                Text="{Binding Name}" />
-            <Label
-                Grid.Row="1"
-                Grid.Column="1"
-                CharacterSpacing="3"
-                FontSize="12"
-                HorizontalOptions="Center"
-                Text="{Binding BirthDate, StringFormat='{0:dd/MM/yyyy}'}" />
-            <Label
-                Grid.Row="2"
-                Grid.Column="1"
-                CharacterSpacing="3"
-                FontSize="12"
-                HorizontalTextAlignment="Center"
-                Text="{Binding Age, StringFormat='{0:F1}'}" />
-        </Grid>
+            P
     </VerticalStackLayout>
 
 
