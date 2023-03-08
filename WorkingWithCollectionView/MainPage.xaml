@@ -17,8 +17,7 @@
             HeightRequest="40"
             Text="טען תלמידים"
             WidthRequest="120" />
-        <Grid
-            P
+        
     </VerticalStackLayout>
 
 
