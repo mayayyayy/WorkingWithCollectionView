@@ -26,7 +26,7 @@ public partial class MainPage : ContentPage
         Student = new() { Image="dotnet_bot.svg", Name="ברירת מחדל",BirthDate=new DateTime()};
        
         //נקשר את הדף שלנו לאובייקט המכיל את הקוד שלו
-        this.BindingContext = this;
+        this.BindingContext = this;       
         InitializeComponent();
        
 	}
@@ -45,6 +45,8 @@ public partial class MainPage : ContentPage
         Students.Add(new() { Name = "Roni", Image = "roni.jpg", BirthDate = new DateTime(2006, 2, 19) });
         //הוספת תלמיד בדרך המלאה
         Students.Add(new Student { Name = "Omer", BirthDate = new DateTime(2006, 2, 9), Image = "omer.jpg" });
+        Students.Add(new() { Name = "Maya", Image = "maya.jpg", BirthDate = new DateTime(2006, 10, 13) });
+
         Student = Students[0];
 
     }
@@ -55,5 +57,15 @@ public partial class MainPage : ContentPage
         OnPropertyChanged(nameof(Students));
 
     }
+
+    private void SwipeItem_Clicked(object sender, EventArgs e)
+    {
+        Students.Remove(Student);
+    }
+    private void SwipeItem_ClickedCopy(object sender, EventArgs e)
+    {
+        Students.Add(Student);
+    }
+
 }
 
