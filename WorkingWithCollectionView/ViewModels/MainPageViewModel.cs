@@ -12,6 +12,8 @@ namespace WorkingWithCollectionView.ViewModels
 {
     internal class MainPageViewModels:INotifyPropertyChanged
     {
+        public Command LoadStudentsCommand { get; private set; }
+    
         private Student _student;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -24,6 +26,7 @@ namespace WorkingWithCollectionView.ViewModels
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
 
+        
         public ObservableCollection<Student> Students { get; set; }
         public MainPageViewModels()
         {
@@ -31,6 +34,7 @@ namespace WorkingWithCollectionView.ViewModels
             Students = new ObservableCollection<Student>();
             //נאתחל את התלמיד הבודד לריק
             Student = new() { Image = "dotnet_bot.svg", Name = "ברירת מחדל", BirthDate = new DateTime() };
+            LoadStudentsCommand = new Command(LoadStudents);
         }
         //נקשר את הדף שלנו לאובייקט המכיל את הקוד שלו
        

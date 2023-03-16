@@ -4,16 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:Models="clr-namespace:BindingToObject.Models"
-    xmlns:this="clr-namespace:WorkingWithCollectionView"
-    x:DataType="this:MainPage">
-
+    xmlns:this="clr-namespace:WorkingWithCollectionView.ViewModels"
+    x:DataType="this:MainPageViewModels">
 
     <VerticalStackLayout>
 
         <Button
             Margin="20"
             BorderWidth="3"
-            Clicked="Button_Clicked"
+            Command="{Binding LoadStudentsCommand}"
             HeightRequest="60"
             Text="load students"
             WidthRequest="160" />
